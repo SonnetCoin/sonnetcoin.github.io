@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font: inherit;
+}
+
+h1 {
+  font-size: 25px;
+}
+
+h3 {
+  color: #d97b5b;
+}
+
+p {
+  font-size: 15px;
+  line-height: 25px;
+}
+
+body {
+  background-color: #edece3;
+  color: #0f0f0c;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #edece3;
+}
+
+header div {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 16px 32px;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  gap: 32px;
+}
+
+.call-to-action {
+  height: 40px;
+  width: 94px;
+  font-size: 14px;
+  border: 1px solid #f5754a;
+  border-radius: 5px;
+  font-weight: 500;
+  background-color: #d97b5b;
+  color: #edece3;
+}
+
+main {
+  min-height: calc(100dvh - 121px);
+  max-width: 1440px;
+  margin: 80px auto 40px;
+  padding: 0 50px;
+}
+
+.hero {
+  min-height: 460px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  flex-wrap: wrap-reverse;
+}
+
+.hero a {
+  color: #2b2b24;
+  text-decoration: underline;
+}
+
+.hero-content {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero-image img {
+  height: 100%;
+  max-height: 460px;
+}
+
+#why {
+  margin-top: 50px;
+  text-align: center;
+  scroll-margin-top: 20px;
+}
+
+.reasons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.reason {
+  width: 240px;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-bottom: 2px solid #d97b5b;
+  border-top: 2px solid #d97b5b;
+  background-color: #f3f2ed;
+  border-radius: 20px;
+  height: 220px;
+  box-shadow: 10px 10px 40px -40px #d97b5b;
+}
+
+footer {
+  height: 46px;
+  padding: 15px;
+}
+
+footer p {
+  font-size: 13px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (max-width: 1023px) {
+  main {
+    padding: 30px 30px;
+  }
+
+  .hero {
+    gap: 30px;
+    text-align: center;
+  }
+
+  .hero .call-to-action {
+    margin: 0 auto;
+  }
+
+  .hero-image img {
+    max-height: 350px;
+  }
+
+  .hero-content {
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 767px) {
+  nav {
+    display: none;
+  }
+}
